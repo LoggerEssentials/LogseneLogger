@@ -1,6 +1,12 @@
 # LogseneLogger
 A logger for Logsene
 
+## Installation
+
+```
+composer require logger/logsene
+```
+
 ## Example configuration
 
 ```php
