@@ -9,5 +9,5 @@ $tags = ['test'];
 $context = ['test' => true];
 $httpClientAdapter = null; /// Use the default http-client-adapter
 $logger = new \Logger\LogseneLogger($url, $tags, $context, $httpClientAdapter);
-$logger->debug('Dies ist ein Test');
+$logger->debug('This is a test-message');
 ```
