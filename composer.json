@@ -1,6 +1,6 @@
 {
 	"name": "logger/logsene",
-	"description": "A psr-3 compatible Pushover implementation",
+	"description": "A psr-3 compatible Logsene implementation",
 	"license": "MIT",
 	"authors": [{
 		"name": "ron",
