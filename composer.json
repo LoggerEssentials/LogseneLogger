@@ -1,0 +1,38 @@
+{
+	"name": "logger/logsene",
+	"description": "A psr-3 compatible Pushover implementation",
+	"license": "MIT",
+	"authors": [{
+		"name": "ron",
+		"email": "ron.kirschler@gmail.com"
+	}],
+	"require": {
+		"php": ">= 7.1",
+		"ext-json": "*",
+		"psr/log": "^1.0",
+		"psr/http-client": "^1.0",
+		"psr/http-factory": "^1.0"
+	},
+	"require-dev": {
+		"roave/security-advisories": "dev-master",
+		"phpunit/phpunit": ">= 3.7",
+		"phpstan/phpstan": ">= 0.9.2"
+	},
+	"autoload": {
+		"psr-4": {
+			"Logger\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Logger\\": ["src/", "tests/"]
+		}
+	},
+	"suggest": {
+		"logger/essentials": "Advanced logging component library"
+	},
+	"scripts": {
+		"phpstan": "phpstan analyze -l 4 src/",
+		"tests": "phpunit -c tests.xml"
+	}
+}
