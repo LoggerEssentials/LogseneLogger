@@ -46,9 +46,8 @@ class LogseneLogger extends AbstractLogger {
 			'context' => array_merge($this->context, $context)
 		];
 
-		$body = json_encode($data, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_THROW_ON_ERROR);
-
 		try {
+			$body = json_encode($data, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_THROW_ON_ERROR);
 			$this->httpClientAdapter->post($this->logseneUrl, $body, []);
 		} catch (Throwable $e) {
 		}
